@@ -128,11 +128,13 @@ body {
   background-size: cover;
   background-position: center;
   padding: 40px 0;
+  position: relative;
 }
 
 .hero-overlay {
   width: 100%;
   height: 100%;
+  top: -180px; 
 }
 
 .hero-content {
@@ -167,8 +169,11 @@ body {
 }
 
 .hero-girl {
-  max-width: 320px;
-  height: auto;
+  width: 589px;
+  height: 500px;
+  top: -50px; /* Você pode ajustar */
+  
+  position: absolute;
 }
 
 /* Vídeo */
@@ -730,6 +735,16 @@ input {
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+}
+.container-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.logos_sesi {
+  max-width: 100%;
+  height: auto;
 }
 
 .card:hover {
