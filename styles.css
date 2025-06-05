@@ -38,6 +38,7 @@ body {
 /* Header institucional */
 .header-institucional {
   background-color: #fff;
+  z-index: 10;
   font-size: 12px;
   color: #666;
   padding: 8px 0;
@@ -129,12 +130,13 @@ body {
   background-position: center;
   padding: 40px 0;
   position: relative;
+  overflow: visible;
 }
 
 .hero-overlay {
   width: 100%;
   height: 100%;
-  top: -180px; 
+  position: relative;
 }
 
 .hero-content {
@@ -143,6 +145,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+  z-index: 2
 }
 
 .hero-left {
@@ -155,6 +158,7 @@ body {
   text-align: right;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start
 }
 
 .hero-selo {
@@ -170,15 +174,18 @@ body {
 
 .hero-girl {
   width: 589px;
-  height: 500px;
-  top: -50px; /* Você pode ajustar */
-  
-  position: absolute;
+  height:604px;
+  height: auto;
+  position: relative; /* ou nenhum posicionamento */
+  top: 90px; /* zera o deslocamento */
+  right: 0;
+  z-index: 1 /* Se quiser garantir que fique atrás */
 }
+
 
 /* Vídeo */
 .video-section {
-  
+  z-index: 5;
   background: #FFD21F;
 
   
@@ -257,6 +264,7 @@ body {
   text-align: center;
   width: 488px;
   height: 572px;
+  z-index:5;
 }
 
 .selo {
