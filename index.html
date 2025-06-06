@@ -66,13 +66,18 @@
     <div class="video-content">
   <img src="selos/selo_do_video.png" alt="Selo do vídeo" class="selo">
 
-  <button onclick="openVideoModal()" class="play-button">
-    
-  </button>
+  <div class="linha"></div>
 
-  <div class="linha"></div>
-  <p class="texto-video">Assista ao vídeo</p>
-  <div class="linha"></div>
+<button class="botao-video" onclick="openVideoModal()">
+  <span>Assista ao vídeo</span>
+  <img src="imagens/play-button-removebg-preview.png" alt="Play" class="play-icon">
+</button>
+
+<div class="linha"></div>
+
+  
+
+
 </div>
 
   </div>
@@ -97,28 +102,27 @@
   </div>
 </section>
 
-
-<!-- Diferenciais -->
-<section class="differentials" id="diferenciais">
-  <div class="container">
-   <div class="diff-image">
-      <img src="imagens/aluno_lendo.png" alt="Estudante com laptop" class="student-laptop">
-    </div>
-    <div class="diff-content">
-      <h2>Diferenciais que desenvolvem alunos para fazer a diferença</h2>
-      <p>Conheça nossa metodologia única que prepara os estudantes para os desafios do futuro com competências essenciais.</p>
-      <ul class="diff-list">
-        <li><img src="icons/Bounding box.png">Protagonismo</li>
-        <li><img src="icons/smart_toy.png">Competições de Robótica</li>
-        <li><img src="icons/groups.png">Trabalhos em equipe</li>
-        <li><img src="icons/handshake.png">Parcerias com a indústria</li>
-        <li><img src="icons/lightbulb.png">Inovação e tecnologia</li>
-      </ul>
-      <a href="#metodologia" class="cta-button">Saiba mais</a>
-    </div>
-    
+<section class="diferenciais">
+  <div class="imagem-aluno">
+    <img src="imagens/Image Container.png" alt="Aluno lendo"/>
   </div>
+  <div class="conteudo">
+    <h2>Diferenciais que desenvolvem alunos <br> para fazer a diferença</h2>
+    <p>Quer entender como essa metodologia transforma o aprendizado?<br>
+    Conheça mais sobre nosso modelo de ensino inovador.</p>
+    <button>Quero conhecer</button>
+  </div>
+  <ul class="lista-diferenciais">
+    <li><img src="icons/campaign.png">Protagonismo</li>
+    <li><img src="icons/smart_toy.png">Competições de Robótica</li>
+    <li><img src="icons/groups.png">Trabalhos em equipe</li>
+    <li><img src="icons/handshake.png">Parcerias com a indústria</li>
+    <li><img src="icons/lightbulb.png">Inovação e tecnologia</li>
+  </ul>
 </section>
+
+
+
 
 <!-- Metodologia STEAM -->
 <section class="steam-methodology" id="metodologia">
@@ -278,20 +282,28 @@
 <!-- Rodapé com selo final e redes sociais -->
 <section class="history">
   <div class="container">
-    <div class="history-content">
-      <div class="anniversary-logo footer-logo">
-        <img src="selos/selo_20_anos_foooter.png">
+    <div class="history-bar">
+      <div class="footer-logo">
+        <img src="selos/selo_20_anos_foooter.png" alt="20 anos">
       </div>
-      <h2>Acompanhe a nossa história.</h2>
-      <p>Duas décadas transformando a educação e preparando gerações para o futuro.</p>
+      <div class="history-text">
+        <h2>Acompanhe a nossa história.</h2>
+        <p>Siga a gente nas redes sociais e veja o dia a dia dos nossos alunos.</p>
+      </div>
+
+      
+
       <div class="social-links">
-        <a href="https://www.facebook.com/sesipr" class="social-icon"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/sesi_pr?igsh=aWJpd3kxdXJuMHUz" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/sesipr" class="social-icon"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.youtube.com/@CanaldaIndustriaPR" class="social-icon"><i class="fab fa-youtube"></i></a>
       </div>
+
+      
     </div>
   </div>
 </section>
+
 
 <footer>
   <div class="container footer-content">
@@ -313,7 +325,12 @@
       <a href="#">Ouvidoria</a>
       <span>|</span>
       <a href="#">SAC</a>
+      <a href="#"></a>
       
+      <div class="footer-address">
+  <p><strong>Sistema Fiep - Sistema Federação das Indústrias do Estado do Paraná</strong></p>
+  <p>Av. Cândido de Abreu, 200 - Centro Cívico - 80530-902 - Curitiba-PR</p>
+</div>
     </div>
   </div>
    
